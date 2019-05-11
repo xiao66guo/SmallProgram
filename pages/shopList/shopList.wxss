@@ -1,0 +1,34 @@
+page {
+    background-color: #fff;
+}
+.shop {
+    padding: 20rpx;
+    border-bottom: 1rpx solid #ddd;
+    display: flex;
+    position: relative;
+}
+.shop-img {
+    width: 160rpx;
+    height: 160rpx;
+    margin-right: 20rpx;
+}
+.shop-info {
+    width: 500rpx;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    color: #666;
+    line-height: 1.5;
+}
+.shop-title {
+    font-size: 16px;
+    color: #333;
+    width: 350rpx;
+}
+.shop-star {
+    position: absolute;
+    right: 20rpx;
+    top: 20rpx;
+    
+}
+

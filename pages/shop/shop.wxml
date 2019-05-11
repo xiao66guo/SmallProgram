@@ -1,0 +1,45 @@
+<view class='divider'></view>
+
+<view class='cell'>
+    <navigator class='cell-item arrow'>
+        <text>表单输入框</text>
+    </navigator>
+    <view class='cell-item'>
+        <input type='text' placeholder='text'></input>
+    </view>
+    <view class='cell-item'>
+        <input type='text'password placeholder='password'></input>
+    </view>
+    <view class='cell-item'>
+        <input type='number' placeholder='number'></input>
+    </view>
+    <view class='cell-item'>
+        <input type='idcard' placeholder='idcard'></input>
+    </view>
+</view>
+
+<view class='divider'></view>
+
+<view class='cell'>
+    <navigator class='cell-item arrow'>
+        <text>其他表单组件</text>
+    </navigator>
+    <view class='cell-item'>
+        <checkbox-group>
+            <checkbox color='#f60' checked>K歌</checkbox>
+            <checkbox color='#f60'>看电影</checkbox>
+            <checkbox color='#f60'>打游戏</checkbox>
+        </checkbox-group>
+    </view>
+    <view class='cell-item'>
+        <radio-group bindchange='radioChangeHandle' data-para='1'>
+            <radio color='#f60' checked value='male'>男</radio>
+            <radio color='#f60' value='female'>女</radio>
+            <radio color='#f60' disabled>保密</radio>
+        </radio-group>
+    </view>
+    <view class='cell-item'>
+        <switch checked>自动登录</switch> 
+    </view>
+
+</view>

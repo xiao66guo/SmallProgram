@@ -1,0 +1,70 @@
+.slider,
+.slider image,
+.slider swiper {
+    width: 100%;
+    height: 390rpx;
+} 
+
+.index-nav {
+    display: flex;
+    /* 设置子元素换行排列  */
+    flex-wrap: wrap;
+}
+
+.index-nav .nav-item {
+    width: 33.3333%;
+    height: 200rpx;
+
+    /* 给当前父元素设置成伸缩盒模式  */
+    display: flex;
+    /* 设置垂直排列  */
+    flex-direction: column;
+    /* 设置主轴居中  */
+    justify-content: center;
+    /* 设置交叉居中  */
+    align-items: center;
+    /* 这里的字体是微信小程序官方推荐使用的 px */
+    font-size: 16px;
+
+    border-bottom: 1rpx solid #ccc;
+    /* border-right: 1rpx solid #ccc; */
+
+    /* box-sizing: border-box; */
+}
+
+
+/* 去掉最右边的边线  */
+/* 方法一：  */
+/* .index-nav .nav-item:nth-child(3n) {
+    border-right: 0 none;
+} */
+
+/* 方法二  */
+.index-nav .nav-item:nth-child(3n)::after {
+    width: 0;
+}
+
+.index-nav image {
+    width: 100rpx;
+    height: 100rpx;
+}
+
+/* 首页入口  */
+.index-enter {
+    display: flex;
+    padding: 20rpx 25rpx;
+}
+
+.index-enter .enter-item {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.index-enter image {
+    width: 320rpx;
+    height: 178rpx;
+}
+
+
+

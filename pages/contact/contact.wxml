@@ -1,0 +1,16 @@
+<view class='card'>
+    <text class='card-title'>标题1</text>
+    <text class='card-date'>2017-12-11</text>
+    <image class='card-img' src='https://m.360buyimg.com/mobilecms/s750x366_jfs/t1/34782/21/5145/96138/5cc2df2fEb79e2f34/53758db0c68e0826.jpg!cr_1125x549_0_72!q70.jpg.dpg' mode='aspectFill'></image>
+    <text class='card-desc'>越努力，越幸运</text>
+    <text class='card-read arrow'>查看详情</text>
+</view>
+
+<view class='card' wx:for="{{ msgList }}" wx:key="id">
+    <text class='card-title'>{{ item.title }}</text>
+    <text class='card-date'>{{ item.date }}</text>
+    <image class='card-img' src='{{ item.image }}' mode='aspectFill'></image>
+    <text class='card-desc'>{{ item.desc }}</text>
+    <text class='card-read arrow'>查看详情</text>
+</view>
+

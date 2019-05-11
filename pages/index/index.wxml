@@ -1,0 +1,28 @@
+<!-- 首页轮播图  -->
+<view class = 'slider'>
+    <swiper indicator-dots='true' autoplay='{{ true }}' interval='2500' duration='400' circular='{{ true }}'>
+        <swiper-item wx:for="{{ sliderList }}" wx:key="id">
+            <image src='{{ item.image }}' width='375' height='150' mode='aspectFill' lazy-load />
+        </swiper-item>
+    </swiper>
+</view>
+
+<!-- 首页导航分区  -->
+<view class = 'index-nav bgw'>
+    <navigator wx:for="{{ navList }}" wx:key="id" class = 'nav-item bdr' url='/pages/shopList/shopList?cat={{ item.id }}&title={{ item.name }}'>
+        <image src = '{{ item.icon }}' lazy-load></image>
+        <text>{{ item.name}}</text>
+    </navigator> 
+</view>
+
+<view class='divider'></view>
+
+<!-- 首页入口  -->
+<view class = 'index-enter mt20 bgw'>
+    <navigator class='enter-item'>
+        <image src = '/assets/images/link01.png'></image>
+    </navigator>
+    <navigator class='enter-item'>
+        <image src = '/assets/images/link02.png'></image>
+    </navigator>
+</view>
